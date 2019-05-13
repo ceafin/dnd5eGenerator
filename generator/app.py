@@ -3,5 +3,8 @@
 
 
 def run():
-    print("In app.py, running run().")
-    print("__name__ is: " + __name__)
+    print("Running app.run().")
+
+
+if __name__ == "__main__":
+    print("Usage is: python -m generator")
