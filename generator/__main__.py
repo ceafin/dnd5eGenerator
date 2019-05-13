@@ -1,13 +1,7 @@
 #
 #
 
-import random
-
-
-def run():
-    print("__main__ is: " + __name__)
-    print("Hello, World!")
-
+from generator import app
 
 if __name__ == "__main__":
-    run()
+    app.run()
