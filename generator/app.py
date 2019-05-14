@@ -1,10 +1,11 @@
 #
 #
-import generator.tables.generics
+from generator.tables import generics
 
 
 def run():
-    print(tables.generics.place())
+    place = generics.place()
+    print(f"Rolled place: {place}")
 
 
 if __name__ == "__main__":
