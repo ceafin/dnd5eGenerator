@@ -2,6 +2,7 @@
 #
 from generator.tables import generic
 from generator.builders import tavern
+from generator.common import rollers
 
 
 def run():
@@ -10,6 +11,9 @@ def run():
 
     my_tavern = tavern.builder()
     print(f"Tavern Builder: {my_tavern}")
+
+    characterStats = rollers.abilRollSet()
+    print(characterStats)
 
 
 if __name__ == "__main__":
