@@ -1,7 +1,7 @@
 from random import choice, choices, randint
 
 
-def place():
+def place(count=1):
     elements = [
         "battlement",
         "bridge",
@@ -44,4 +44,7 @@ def place():
         "vault",
         "wood",
     ]
-    return choice(elements)
+    if count > 1:
+        return choices(elements, k=count)
+    else:
+        return choice(elements)
