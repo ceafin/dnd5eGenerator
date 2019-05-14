@@ -1,9 +1,10 @@
 #
 #
+import generator.tables.generics
 
 
 def run():
-    print("Running app.run().")
+    print(tables.generics.place())
 
 
 if __name__ == "__main__":
