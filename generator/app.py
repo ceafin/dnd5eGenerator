@@ -1,7 +1,7 @@
 #
 #
-from generator.tables import generic
-from generator.builders import tavern
+from generator.tables import generic, npcs
+from generator.builders import tavern, npc
 from generator.common import rollers
 
 
@@ -14,6 +14,11 @@ def run():
 
     characterStats = rollers.abilRollSet()
     print(characterStats)
+
+    myNPC = npc.builder()
+    print(myNPC)
+
+    print("A generic flaw for a character " + npcs.flawsSecrets() + ".")
 
 
 if __name__ == "__main__":
