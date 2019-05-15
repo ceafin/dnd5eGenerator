@@ -1,4 +1,4 @@
-import random
+from random import randint
 
 
 def rollSuper():
@@ -6,9 +6,9 @@ def rollSuper():
     attrib = 0
 
     for i in range(6):
-        roll = random.randint(1, 6)
+        roll = randint(1, 6)
         while roll == 1:
-            roll = random.randint(1, 6)
+            roll = randint(1, 6)
 
         stat.append(roll)
 
@@ -27,9 +27,9 @@ def rollHeroic():
     attrib = 0
 
     for i in range(4):
-        roll = random.randint(1, 6)
+        roll = randint(1, 6)
         while roll == 1:
-            roll = random.randint(1, 6)
+            roll = randint(1, 6)
 
         stat.append(roll)
 
@@ -45,9 +45,9 @@ def rollClassic():
     attrib = 0
 
     for _ in range(3):
-        roll = random.randint(1, 6)
+        roll = randint(1, 6)
         while roll == 1:
-            roll = random.randint(1, 6)
+            roll = randint(1, 6)
 
         attrib += roll
 
@@ -59,7 +59,7 @@ def rollNPC():
 
     for i in range(3):
         i *= 1
-        attrib += random.randint(1, 6)
+        attrib += randint(1, 6)
 
     return attrib
 
