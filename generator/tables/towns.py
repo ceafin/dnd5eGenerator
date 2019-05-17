@@ -158,7 +158,7 @@ def spawnBuilding():
     def _Religious():
         elements = [
             "Temple to a good or neutral deity",
-            "Temple to afalse deity (run bycharlatan priests)",
+            "Temple to a false deity (run by charlatan priests)",
             "Home of ascetics",
             "Abandoned shrine",
             "Library dedicated to religious study",
@@ -173,13 +173,13 @@ def spawnBuilding():
 
     def _Warehouse():
         elements = [
-            "Empty or abandoned",
-            "Heavily guarded, expensive goods",
-            "Cheap goods",
-            "Bulk goods",
-            "Live animals",
-            "Weaponsfarmor",
-            "Goods from a distant land",
+            "Empty or abandoned warehouse",
+            "Heavily guarded warehouse of expensive goods",
+            "Cheap goods warehouse",
+            "Bulk goods warehouse",
+            "Live animals stock yard",
+            "Weapons/armor warehouse",
+            "Goods, from a distant land, warehouse",
             "Secret smuggler's den",
         ]
         return choices(elements, weights=[4, 2, 3, 4, 1, 2, 2, 1])[0]
@@ -187,14 +187,14 @@ def spawnBuilding():
     def _Shop():
         elements = [
             "Pawnshop",
-            "Herbs/incense",
-            "Fruitsfvegetables",
-            "Dried meats",
-            "Pottery",
-            "Undertaker",
-            "Books",
+            "Herbalist/incense shop",
+            "Fruits/vegetables shop",
+            "Dried meats shop",
+            "Pottery shop",
+            "Undertaker shop",
+            "Books shop",
             "Moneylender",
-            "Weaponsfarmor",
+            "Weapons/armor shop",
             "Chandler",
             "Smithy",
             "Carpenter",
@@ -205,7 +205,7 @@ def spawnBuilding():
             "Tailor",
             "Ropemaker",
             "Mason",
-            "Scribe",
+            "Scribe study",
         ]
         return choice(elements)
 

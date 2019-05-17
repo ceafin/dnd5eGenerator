@@ -1,7 +1,7 @@
 #
 #
 from generator.tables import generic, npcs
-from generator.builders import tavern, npc
+from generator.builders import tavern, npc, town
 from generator.common import rollers
 
 
@@ -18,7 +18,8 @@ def run():
     myNPC = npc.builder()
     print(myNPC)
 
-    print("A generic flaw for a character " + npcs.flawsSecrets() + ".")
+    randomTown=town.builder()
+    print(randomTown)
 
 
 if __name__ == "__main__":
