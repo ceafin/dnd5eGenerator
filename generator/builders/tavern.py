@@ -32,7 +32,7 @@ def builder(count=1):
     
     if count > 1:
         results=[]
-        for n in range(count):
+        for _ in range(count):
             result = "The " + name()
             if randint(1, 2) == 2:
                 result = result + " " + taverns.bldg()
