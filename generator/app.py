@@ -1,6 +1,6 @@
 #
 #
-from generator.tables import generic, npcs
+from generator.tables import generic, npcs, adventures
 from generator.builders import tavern, npc, town
 from generator.common import rollers
 
@@ -18,8 +18,12 @@ def run():
     myNPC = npc.builder()
     print(myNPC)
 
-    randomTown=town.builder()
+    randomTown = town.builder()
     print(randomTown)
+
+    print("Dungeon prompt: " + adventures.dungeonGoals())
+    print("Wilderness prompt: " + adventures.wildernessGoals())
+    print("Other prompt: " + adventures.otherGoals())
 
 
 if __name__ == "__main__":
